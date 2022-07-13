@@ -1,1 +1,168 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, -webkit-max-content);
+  grid-template-rows: repeat(4, max-content);
+  grid-template-areas: "head" "main" "aside" "footer";
+}
+body header {
+  font-family: "Roboto", sans-serif;
+  grid-area: head;
+  flex-wrap: wrap;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgb(100, 100, 100);
+  z-index: 1000;
+}
+body header h1 {
+  font-size: 20px;
+  cursor: pointer;
+}
+body header section {
+  display: flex;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header section .checkNav {
+  display: none;
+}
+body header section .checkNav:checked + nav {
+  order: -1;
+}
+body header section .checkNav:not(:checked) + nav label {
+  display: none;
+}
+body header section .checkNav:checked + nav img {
+  display: none;
+}
+body header section label {
+  cursor: pointer;
+}
+body header section label img {
+  width: 20px;
+  margin: 10px;
+}
+body header section nav input {
+  height: 2.5rem;
+  width: 100px;
+  border: 1px solid purple;
+  border-radius: 2rem;
+  padding: 10px;
+}
+body header section img {
+  border-radius: 50%;
+  width: 40px;
+}
+body main {
+  grid-area: main;
+}
+body main section.gallery ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  width: 100vw;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  margin: 5px;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+body main section.gallery ul img {
+  border-radius: 50%;
+  width: 70px;
+}
+body main section.public {
+  width: 95vw;
+  margin: 1rem auto;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+body main section.public article.top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  height: 80px;
+  border-bottom: 1px solid grey;
+}
+body main section.public article.top div {
+  display: flex;
+}
+body main section.public article.top div img {
+  border-radius: 50%;
+  width: 50px;
+}
+body main section.public article.top input.inputPost, body main section.public article.top nav {
+  display: none;
+}
+body main section.public article.top .inputPost:checked + nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: rgba(163, 6, 163, 0.623);
+  border-radius: 1rem;
+  text-align: end;
+  padding-right: 10px;
+}
+body main section.public article.top ul {
+  list-style: none;
+}
+body main section.public article.top ul :not(:nth-child(1)) {
+  margin-top: 5px;
+}
+body main section.public article.top ul li a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+}
+body main section.public article.content {
+  width: 100%;
+  font-size: 13px;
+}
+body main section.public article.content img {
+  width: 100%;
+}
+body main section.public article.content div i {
+  font-size: 20px;
+  margin: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+}
+body main section.public article.content div i:hover {
+  color: rgb(128, 0, 128);
+}
+body main section.public article.content span {
+  color: rgb(100, 100, 100);
+}
+body aside {
+  grid-area: aside;
+  display: none;
+}
+body footer {
+  grid-area: footer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

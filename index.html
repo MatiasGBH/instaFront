@@ -11,65 +11,95 @@
 <body>
     <header>
         <h1>InstaFront</h1>
-        <nav>
-            <label for="buscador">
-                <input type="text" name="buscador" id="buscador">
+        <section>
+            <label for="check">
+                <img src="img/lupa.svg" alt="lupa">
             </label>
-        </nav>
-        <img src="img/fotoPerfil.svg" alt="foto de perfil">
+            <input type="checkbox" id="check" class="checkNav">
+            <nav>
+                <label for="buscador">
+                    <input type="text" name="buscador" id="buscador" placeholder="Buscador...">
+                </label>
+                <img src="img/fotoPerfil.svg" alt="foto de perfil" class="imgHeader">
+            </nav>
+        </section>
     </header>
     <main>
         <section class="gallery">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
+                <li><img src="img/fotoPerfil.svg" alt="fotoPerfil"></li>
             </ul>
         </section>
         <section class="public">
             <article class="top">
                 <div>
-                    <img src="" alt="">
-                    <h3></h3>
+                    <img src="img/fotoPerfil.svg" alt="fotoPerfil">
+                    <h3>Abril Gonzalez</h3>
                 </div>
-                <img src="" alt="">
+                <label for="checkPost">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </label>
+                <input type="checkbox" id="checkPost" class="inputPost">
+                <nav>
+                    <ul>
+                        <li><a href="#">Seguir</a></li>
+                        <li><a href="#">Guardar</a></li>
+                        <li><a href="#">Enviar</a></li>
+                        <li><a href="#">Compartir en...</a></li>
+                        <li><a href="#">Reportar</a></li>
+                    </ul>
+                </nav>
             </article>
             <article class="content">
-                <img src="" alt="">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-brands fa-telegram"></i>
-                <i class="fa-regular fa-face-smile"></i>
-                <p></p>
-                <span></span>
-                <p></p>
-                <p></p>
+                <img src="img/fotoPerfil.svg" alt="publicación">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <p>Les gusta a lulipringless y otras personas</p>
+                <span>Ver los 3,672 comentarios</span>
+                <p>Gabriela Mancini Hola! que placer verte en frontend!!</p>
+                <p>Jonathan Gonzalez Te estabamos esperando!! Vamooh!</p>
             </article>
         </section>
     </main>
     <aside>
         <section class="perfil">
-            <img src="" alt="">
+            <img src="img/fotoPerfil.svg" alt="fotoPerfil">
             <div>
-                <p></p>
-                <span></span>
+                <p>Abril Gonzalez23</p>
+                <span>abril</span>
             </div>
-            <a href=""></a>
+            <a href="#">Cambiar</a>
         </section>
         <section class="sugerencias">
-            <img src="" alt="">
-            <div>
-                <p></p>
-            </div>
-            <a href=""></a>
+            <span>Sugerencias para ti</span>
+            <article>
+                <img src="img/fotoPerfil.svg" alt="fotoPerfil">
+                <div>
+                    <p>Jonathan Gonzalez</p>
+                </div>
+                <a href="#">Seguir</a>
+            </article>
+            <article>
+                <img src="img/fotoPerfil.svg" alt="fotoPerfil">
+                <div>
+                    <p>Gabriela Mancini</p>
+                </div>
+                <a href="#">Seguir</a>
+            </article>
         </section>
     </aside>
     <footer>
-        <p></p>
+        <p>Todos los derechos Reservados a Bianchi Matias</p>
     </footer>
 </body>
 </html>
